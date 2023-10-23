@@ -74,7 +74,7 @@ class ItemPage extends StatelessWidget {
                   Icons.star,
                   color: Colors.red[500],
                 ),
-                const Text('41'),
+                Text(item.rating.toString()),
               ],
             ),
           ],
