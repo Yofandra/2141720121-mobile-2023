@@ -11,6 +11,8 @@ Nama : Yofandra Arta Priyoga
 #### Soal 1
 ![Alt text](docs/soal1.png)
 ![Alt text](docs/soal1.gif)
+<br>
 
-
+#### Soal 2
+![Alt text](docs/soal2.png)
 
