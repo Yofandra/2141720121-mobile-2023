@@ -16,3 +16,9 @@ Nama : Yofandra Arta Priyoga
 #### Soal 2
 ![Alt text](docs/soal2.png)
 
+#### Soal 3
+Penjelasan :
+substring digunakan untuk mendapatkan string dengan mengambil 450 karakter pertama, sedangkan catchError adalah metode yang dipanggil jika terjadi kesalahan saat menjalankan future.
+
+Output:
+![Alt text](docs/soal3.gif)
