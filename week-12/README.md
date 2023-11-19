@@ -53,3 +53,7 @@ Output:
 Output: 
 ![Alt text](docs/soal7.gif)
 <br>
+
+#### Soal 8
+Penjelasan:
+Perbedaannya adalah Dengan FutureGroup, kita dapat menambahkan Future secara dinamis ke grup setelah pembuatan grup. Sebaliknya, Future.wait() memerlukan semua Future pada saat pembuatan dan tidak dapat menambahkan Future setelah itu. Selain itu, Jika salah satu Future dalam Future.wait() gagal, maka Future yang dikembalikan oleh Future.wait() juga akan gagal dengan kesalahan yang sama, dan semua Future yang belum selesai akan dibatalkan. Sebaliknya, FutureGroup akan menunggu semua Future selesai, bahkan jika beberapa di antaranya gagal.
