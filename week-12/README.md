@@ -32,3 +32,11 @@ Pada langkah 1, kode tersebut merupakan fungsi asinkron untuk menunda eksekusi s
 Output: 
 ![Alt text](docs/soal4.gif)
 <br>
+
+#### Soal 5
+Penjelasan:
+Pada langkah 2, pertama mendeklarasikan completer. Fungsi getNumber() menginisialisasi completer dan memanggil fungsi calculate() untuk mengembalikan future. Fungsi calculate sendiri adalah fungsi asinkron yang menunda eksekusi selama 5 detik dan kemudian menyelesaikan completer dengan nilai 42
+
+Output: 
+![Alt text](docs/soal5.gif)
+<br>
