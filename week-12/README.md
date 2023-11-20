@@ -89,3 +89,10 @@ Tetap sama, karena hanya menambah pesan error jika terjadi error
 Output: 
 ![Alt text](docs/soal14.gif)
 <br>
+
+#### Soal 14
+Penjelasan:
+Maka background akan berubah warna sesuai dengan nama buttonnya. Karena Navigation.pop() pada masing-masing button berisi parameter color yang telah ditentukan pada buttonnya.
+Output: 
+![Alt text](docs/soal16.gif)
+<br>
