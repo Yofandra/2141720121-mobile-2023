@@ -75,3 +75,10 @@ Bisa, karena flutter web yang menggunakan API Geolocation langsung dari browser
 Output: 
 ![Alt text](docs/soal12.gif)
 <br>
+
+#### Soal 13
+Penjelasan:
+Tidak ada perbedaan, karena keduanya mengambil lokasi secara sinkron dalam blok initState dan tampilan delaynya pun juga sama yaitu 3 detik.
+Output: 
+![Alt text](docs/soal13.gif)
+<br>
