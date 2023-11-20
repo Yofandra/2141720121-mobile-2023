@@ -63,3 +63,8 @@ Perbedaannya adalah Dengan FutureGroup, kita dapat menambahkan Future secara din
 Output: 
 ![Alt text](docs/soal9.gif)
 <br>
+
+#### Soal 10
+Penjelasan: 
+Fungsi returnError() menjalankan operasi asinkron kemudian menjalankan Exception setelah delay 2 detik. Sedangkan pada fungsi handleError() ketika ada exception yang dihasilkan returnError(), catch akan menangkap dan setState akan mengupdate state dengan pesan error
+
