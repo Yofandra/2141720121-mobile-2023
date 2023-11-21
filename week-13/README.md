@@ -15,3 +15,8 @@ Nama : Yofandra Arta Priyoga
 Output: 
 ![Alt text](docs/soal4.gif)
 <br>
+
+#### Soal 5
+Penjelasan:
+listen: Eksekusi kode berlanjut setelah dipanggil. Berarti kode setelah listen dapat dieksekusi sebelum stream selesai
+await for: menunda eksekusi kode sampai stream selesai. Ini berarti bahwa kode setelah await for tidak akan dieksekusi sampai semua event di stream telah diproses.
