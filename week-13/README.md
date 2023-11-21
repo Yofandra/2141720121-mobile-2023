@@ -20,3 +20,11 @@ Output:
 Penjelasan:
 listen: Eksekusi kode berlanjut setelah dipanggil. Berarti kode setelah listen dapat dieksekusi sebelum stream selesai
 await for: menunda eksekusi kode sampai stream selesai. Ini berarti bahwa kode setelah await for tidak akan dieksekusi sampai semua event di stream telah diproses.
+
+#### Soal 6
+Penjelasan:
+Kode pada langkah 8 ini mendengarkan stream angka dari NumberStream, dan setiap kali angka baru tersedia, ia mengubah lastNumber menjadi angka tersebut dan memperbarui UI. Sedangkan kode pada langkah 10 ini menghasilkan angka acak dan menambahkannya ke dalam stream
+
+Output:
+![Alt text](docs/soal6.gif)
+<br>
