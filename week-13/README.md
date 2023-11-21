@@ -9,3 +9,9 @@ Nama : Yofandra Arta Priyoga
 #### Soal 3
 * Keyword yield* digunakan untuk mendelegasikan ke Stream.periodic
 * Isi perintah kode tersebut untuk menghasilkan urutan nilai setiap detik, dan fungsi ini menghasilkan warna dari arrays colors berdasarkan indeks yang dihitung dari waktu.
+<br>
+
+#### Soal 4
+Output: 
+![Alt text](docs/soal4.gif)
+<br>
