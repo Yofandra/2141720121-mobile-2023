@@ -59,3 +59,10 @@ Output:
 #### Soal 10
 Penjelasan : Hal ini dikarenakan penggunaan subscription pada stream yang sama tanpa menutup subscription sebelumnya
 <br>
+
+#### Soal 11
+Penjelasan : Hal ini dikarenakan penggunaan asBroadcastStream() membuat stream menjadi bisa didengarkan oleh beberapa subscription sekaligus
+
+Output:
+![Alt text](docs/soal11.gif)
+<br>
