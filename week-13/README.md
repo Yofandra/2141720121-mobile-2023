@@ -45,7 +45,7 @@ Output:
 ![Alt text](docs/soal8.gif)
 <br>
 
-### Soal 9
+#### Soal 9
 Penjelasan:
 * Langkah 2 : Mendengarkan data yang mengalir melalui Stream dan menyimpan StreamSubscription ke dalam variabel subscription. Setiap kali ada data baru, fungsi dalam listen akan dipanggil dengan data baru tersebut sebagai argumen
 * Langkah 6 : Ketika memanggil subscription.cancel(), maka akan berhenti mendengarkan Stream dan tidak akan menerima data baru lagi.
@@ -54,4 +54,8 @@ Penjelasan:
 Output:
 ![Alt text](docs/soal9.gif)
 ![Alt text](docs/soal9.png)
+<br>
+
+#### Soal 10
+Penjelasan : Hal ini dikarenakan penggunaan subscription pada stream yang sama tanpa menutup subscription sebelumnya
 <br>
