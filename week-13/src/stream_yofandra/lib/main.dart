@@ -37,6 +37,7 @@ class _StreamHomePageState extends State<StreamHomePage> {
   late StreamController numberStreamController;
   late NumberStream numberStream;
   late StreamTransformer transformer;
+  late StreamSubscription subscription;
 
   void changeColor() async {
     // await for (var eventColor in colorStream.getColors()) {
@@ -49,6 +50,10 @@ class _StreamHomePageState extends State<StreamHomePage> {
         bgColor = eventColor;
       });
     });
+  }
+
+  void stopStream() {
+    numberStreamController.close();
   }
 
   @override
@@ -68,14 +73,18 @@ class _StreamHomePageState extends State<StreamHomePage> {
     numberStream = NumberStream();
     numberStreamController = numberStream.controller;
     Stream stream = numberStreamController.stream;
-    stream.transform(transformer).listen((event) {
+    subscription = stream.listen((event) {
       setState(() {
         lastNumber = event;
       });
-    }).onError((error) {
+    });
+    subscription.onError((error) {
       setState(() {
         lastNumber = -1;
       });
+    });
+    subscription.onDone(() {
+      print('OnDone was called');
     });
   }
 
@@ -83,12 +92,19 @@ class _StreamHomePageState extends State<StreamHomePage> {
   void dispose() {
     numberStreamController.close();
     super.dispose();
+    subscription.cancel();
   }
 
   void addRandomNumber() {
     Random random = Random();
     int myNum = random.nextInt(10);
-    numberStream.addNumberToSink(myNum);
+    if (!numberStreamController.isClosed) {
+      numberStream.addNumberToSink(myNum);
+    } else {
+      setState(() {
+        lastNumber = -1;
+      });
+    }
     // numberStream.addError();
   }
 
@@ -108,6 +124,10 @@ class _StreamHomePageState extends State<StreamHomePage> {
               ElevatedButton(
                 onPressed: () => addRandomNumber(),
                 child: Text('New Random Number'),
+              ),
+              ElevatedButton(
+                onPressed: () => stopStream(),
+                child: const Text('Stop Subscription'),
               )
             ],
           ),

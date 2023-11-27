@@ -44,3 +44,14 @@ Penjelasan:
 Output:
 ![Alt text](docs/soal8.gif)
 <br>
+
+### Soal 9
+Penjelasan:
+* Langkah 2 : Mendengarkan data yang mengalir melalui Stream dan menyimpan StreamSubscription ke dalam variabel subscription. Setiap kali ada data baru, fungsi dalam listen akan dipanggil dengan data baru tersebut sebagai argumen
+* Langkah 6 : Ketika memanggil subscription.cancel(), maka akan berhenti mendengarkan Stream dan tidak akan menerima data baru lagi.
+* Langkah 8 : Menghasilkan angka acak dan menambahkannya ke dalam Stream, atau mengubah lastNumber menjadi -1 jika StreamController sudah ditutup.
+
+Output:
+![Alt text](docs/soal9.gif)
+![Alt text](docs/soal9.png)
+<br>
