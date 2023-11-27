@@ -66,3 +66,13 @@ Penjelasan : Hal ini dikarenakan penggunaan asBroadcastStream() membuat stream m
 Output:
 ![Alt text](docs/soal11.gif)
 <br>
+
+
+#### Soal 12
+Penjelasan : 
+* Langkah 3 : Mendefinisikan sebuah kelas NumberStream, lalu membuat objek NumberStream dan memanggil getNumbers(), maka akan mendapatkan Stream yang menghasilkan angka acak setiap detik
+* Langkah 7 : Kode ini akan menampilkan data terakhir dari Stream di tengah layar, atau tidak menampilkan apa pun jika Stream belum menghasilkan data. Jika Stream menghasilkan error, maka ‘Error!’ akan dicetak ke konsol. 
+
+Output:
+![Alt text](docs/soal12.gif)
+<br>
