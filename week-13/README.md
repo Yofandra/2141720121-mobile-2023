@@ -76,3 +76,11 @@ Penjelasan :
 Output:
 ![Alt text](docs/soal12.gif)
 <br>
+
+#### Soal 13
+Penjelasan :
+Konsep BLoC diimplementasikan melalui kelas RandomNumberBloc. Kelas ini memiliki dua StreamController, yaitu _generateRandomController yang digunakan untuk menghasilkan angka acak dan _randomNumberController yang digunakan untuk mengirim angka ke antarmuka pengguna. Di dalam kelas RandomScreen, sebuah instans dari RandomNumberBloc disimpan dalam variabel _bloc. Widget menggunakan StreamBuilder untuk mendengarkan perubahan pada aliran angka acak. Ketika tombol ditekan, sink pada _generateRandomController akan dipicu dan akan menghasilkan angka acak, yang pada gilirannya memicu logika BLoC.
+
+Output:
+![Alt text](docs/soal13.gif)
+<br>
